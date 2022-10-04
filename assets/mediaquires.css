@@ -49,6 +49,9 @@
 }
 }
 @media (max-width:500px){
+    header{
+        padding: 0 10px;
+    }
     #promociones{
         display: flex;
         flex-direction: column;
