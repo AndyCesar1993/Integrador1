@@ -1,0 +1,43 @@
+html{
+    scroll-padding: 60px;
+}
+#volar:checked + #a-volar{
+    display: flex;
+}
+button:hover{
+    transform: scale(0.9);
+    transition: all 0.3s linear;
+
+}
+.nav li a:hover{
+    transform: scale(1.3);
+    transition: all 0.3s linear;
+
+}
+.volar i:hover{
+    transform: rotate(270deg);
+    transition: all 0.8s linear;
+}
+.home-info input:hover{
+    transform: scale(0.9);
+    transition: all 0.3s linear;
+}
+.promociones-card input:hover{
+    transform: scale(0.9);
+    transition: all 0.3s linear;
+}
+.nosotros-info input:hover{
+    transform: scale(0.9);
+    transition: all 0.3s linear;
+}
+.nosotros-redes a:hover{
+    transform: scale(1.3);
+    transition: all 0.3s linear;
+}
+footer a:hover{
+    font-weight: bolder;
+}
+.a-volar-crear:hover{
+    transform: scale(1.3);
+    transition: all 0.3s linear;
+}

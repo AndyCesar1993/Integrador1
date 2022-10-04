@@ -1,0 +1,144 @@
+:root{
+    --blue: #0d7485;
+    --letter-white: #ffffff;
+    --letter:#67b273;
+    
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+    list-style: none;
+    text-decoration: none;
+
+}
+
+body{
+    background-image: url(./login/background.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.register{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.register form section{
+    display: flex;
+    gap: 100px;
+}
+.formulario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;  
+}
+.register h1{
+    letter-spacing: 2px;
+    font-weight: 700;
+    text-shadow:3px 2px rgb(81, 73, 73);
+}
+.nombre{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.register form label{
+    font-size: 25px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: black;
+    text-shadow: 1px 1px var(--letter);
+}
+.register form input{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2rem;
+    background:  linear-gradient(rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0.25));
+    padding: 0 5px;
+    font-size: 20px;
+}
+.register form select{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2rem;
+    border-width: 2px;
+    border-style: inset;
+    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+    background:  linear-gradient(rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0.25));
+    backdrop-filter: blur(2px);
+    padding: 0 5px;
+    font-size: 20px; 
+}
+.register form input::placeholder{
+    color: rgb(56, 50, 50);
+}
+.contraseña-input{
+    display: flex;
+    gap: 20px;
+}
+.register form button{
+    background: var(--blue);
+    border: none;
+    padding: 2px 5px;
+    border-radius: 2rem;
+    box-shadow: 1px 5px 5px var(--border);
+}
+.register form button a{
+    color: var(--letter-white);
+    font-size: 20px;
+}
+
+/*Mediaquires*/
+
+@media (max-width:950px){
+    body{
+        background: url(./login/background-media.jpg);
+        height: auto;
+        padding: 20px;
+    }
+}
+@media(max-width:630px){
+    .register form section{
+        display: flex;
+        flex-direction: column;
+        gap:20px;
+    }
+    .contraseña-input{
+        flex-direction: column;
+    }
+}
+
+/*Animaciones*/
+
+.register form button:hover{
+    transform: scale(0.9);
+    transition: all 0.3s linear;
+}
+
+.register h1{
+    animation: fade 0.5s ease-in;
+}
+
+@keyframes fade{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}

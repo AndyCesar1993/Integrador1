@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;1,300;1,800&display=swap"rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,200&display=swap"rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,700;1,700&display=swap"rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,200&display=swap"rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"/>
+    <link rel="stylesheet" href="./assets/style.css" />
+    <link rel="stylesheet" href="./assets/mediaquires.css" />
+    <link rel="stylesheet" href="./assets/animacion.css" />
+    <title>Landin-Page</title>
+  </head>
+  <body>
+    <header>
+      <img src="./assets/logo-CM.png" alt="logo-CM" />
+      <button class="login"><a href="./login.html">Ingresar</a></button>
+      <label class="menues" for="menu"><i class="bi bi-list"></i></label>
+      <input type="checkbox" name="menu" id="menu">
+      <nav class="nav">
+        <ul>
+          <li>
+            <a href="#home"><i class="bi bi-house"></i></a>Home
+          </li>
+          <li>
+            <a href="#promociones"><i class="bi bi-tree"></i></a>Promociones
+          </li>
+          <li>
+            <a href="#nosotros"><i class="bi bi-info"></i></a>Nosotros
+          </li>
+        </ul>
+      </nav>
+      <label class="volar" for="volar">
+        <i class="bi bi-airplane"></i>A Volar!
+      </label>
+      <input type="checkbox" name="a-volar" id="volar" />
+      <section id="a-volar">
+        <h2>Puedes programar tu viaje en esta seccion</h2>
+        <form>
+          <label>Origen</label>
+          <input
+            type="text"
+            name="Origen"
+            id="Origen"
+            required
+            placeholder="Ingrese Origen"
+          />
+          <label>Destino</label>
+          <input
+            type="text"
+            name="Destino"
+            id="Destino"
+            required
+            placeholder="Ingrese Destino"
+          />
+          <label>Fecha de salida</label>
+          <input type="date" name="Salida" id="Salida" required />
+          <label>Fecha de vuelta</label>
+          <input type="date" name="vuelta" id="vuelta" required />
+          <label>Personas</label>
+          <input
+            type="number"
+            name="personas"
+            id="personas"
+            required
+            placeholder="Ingrese numero de personas"
+          />
+          <label>Alojamiento</label>
+          <select name="Alojamiento" id="Alojamiento" required>
+            <option value="">Desea Alojamiento?</option>
+            <option value="si">Si</option>
+            <option value="no">No</option>
+          </select>
+          <label>Desea alquilar un vehiculo</label>
+          <select name="Vehiculo" id="vehiculo" required>
+            <option value="si">Si</option>
+            <option value="no">No</option>
+          </select>
+          <label>Cree su paquete de viaje</label>
+          <input type="submit" value="Crear" class="a-volar-crear" />
+        </form>
+      </section>
+    </header>
+    <main>
+      <section id="home">
+        <div class="home-info">
+          <div class="tittle">
+            <h1><img src="./assets/logo-CM.png" alt="logo-CM" /> EL MEJOR</h1>
+            <h1>COPILOTO</h1>
+          </div>
+          <p>
+            Organizando su viaje para que sea lo mas comodo y confortable
+            posible, solo sientese y disfrute!
+          </p>
+          <a href="#"><input type="button" value="Contactanos" /></a>
+        </div>
+      </section>
+
+      <section id="promociones">
+        <h2>Promociones</h2>
+        <div class="promociones-cards">
+          <div class="promociones-card">
+            <img
+              src="./assets/promociones/glaciar perito moreno.jfif"
+              alt="glaciar perito moreno"
+            />
+            <h3>Glaciar Perito Moreno</h3>
+            <div class="promociones-card-info">
+              <p>
+                Visite el Parque Nacional Los Glaciares, pasee por las pasarelas
+                y navegue hacia el Glaciar Perito Moreno. Además, viaje en un
+                vehículo todoterreno a la remota Patagonia.
+              </p>
+              <button>$49800</button>
+            </div>
+            <input type="button" value="Más info" />
+          </div>
+          <div class="promociones-card">
+            <img
+              src="./assets/promociones/cataratas del iguazu.jpg"
+              alt="cataratas del iguazu"
+            />
+            <h3>Cataratas del Iguazu</h3>
+            <div class="promociones-card-info">
+              <p>
+                Disfrute de un viaje a las Cataratas del Iguazú todo incluido,
+                ofrecemos vuelo ida y vuelta, estadia 7 dias y 6 noches,
+                excursiones y traslados del hotel al aeropuerto ida y vuelta.
+              </p>
+              <button>$81200</button>
+            </div>
+            <input type="button" value="Más Info" />
+          </div>
+          <div class="promociones-card">
+            <img
+              src="./assets/promociones/Rio de janeiro.jfif"
+              alt="Rio de Janeiro"
+            />
+            <h3>Rio de Janeiro</h3>
+            <div class="promociones-card-info">
+              <p>
+                Conozca la maravillosa ciudad de Rio de Janeiro junto a
+                nosotros. Ofrecemos el vuelo, la estadia de 5 dias y 4 noches,
+                excursión al Cristo Redentor, bosque Tijua y otras más.
+              </p>
+              <button>$160000</button>
+            </div>
+            <input type="button" value="Más Info" />
+          </div>
+          <div class="promociones-card">
+            <img src="./assets/promociones/Bariloche.jfif" alt="Bariloche" />
+            <h3>Bariloche</h3>
+            <div class="promociones-card-info">
+              <p>
+                Viaje a Bariloche con nosotros y maravillese de los hermosos
+                paisajes que tiene, ofrecemos vuelo ida y vuelta, estadia de 7
+                dias y 6 noches y excursiones al cerro Catedral.
+              </p>
+              <button>$77000</button>
+            </div>
+            <input type="button" value="Más Info" />
+          </div>
+          <div class="promociones-card">
+            <img src="./assets/promociones/mendoza.jfif" alt="mendoza" />
+            <h3>Mendoza</h3>
+            <div class="promociones-card-info">
+              <p>
+                Visite Mendoza junto a nosotros, le ofrecemos vuelo y estadia de
+                7 dias y 6 noches. También va a recorrer el Aconcagua, las
+                Termas Cacheuta y los maravillosos viñedos que tiene esta ciudad
+                para ofrecerle.
+              </p>
+              <button>$96000</button>
+            </div>
+            <input type="button" value="Más Info" />
+          </div>
+          <div class="promociones-card">
+            <img src="./assets/promociones/Punta Cana.jfif" alt="Punta Cana" />
+            <h3>Punta Cana</h3>
+            <div class="promociones-card-info">
+              <p>
+                Viaje a Punta Cana con nosotros, ofrecemos vuelo ida y vuelta,
+                estadia de 8 dias y 7 noches en un All Inclusive. También le
+                ofrecemos una excursión a la Isla Saona en Catamaran. Traslado
+                del aeropuerto al Hotel ida y vuelta.
+              </p>
+              <button>$380000</button>
+            </div>
+            <input type="button" value="Más Info" />
+          </div>
+        </div>
+      </section>
+
+      <section id="nosotros">
+        <div class="nosotros-info">
+          <h2>Sobre Nosotros</h2>
+          <p>
+            Somos una agencia familiar de turismo, dedicada a hacer realidad sus
+            sueños. Pueden ver nuestras promociones o programar su viaje
+            personalizado tocando el botón
+          </p>
+          <input type="button" value="A Volar!">
+        </div>
+        <div class="nosotros-contacto">
+          <a href="#"><i class="bi bi-telephone"> 011-5146-9875</i></a>
+          <a href="#"><i class="bi bi-whatsapp"> 11-35689612</i></a>
+        </div>
+        <div class="nosotros-redes">
+          <a href="#"><i class="bi bi-instagram"></i></a>
+          <a href="#"><i class="bi bi-twitter"></i></a>
+          <a href="#"><i class="bi bi-facebook"></i></a>
+        </div>
+        <div class="nosotros-ubicacion">
+          <iframe
+            class="map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1643.085705806674!2d-58.70105662816893!3d-34.54921512835439!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcbda82bf71b41%3A0x702bc43f733edaf3!2sPaunero%20552%2C%20B1662AQL%20Mu%C3%B1iz%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1664199762668!5m2!1ses-419!2sar"
+            width="650"
+            height="200"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <nav>
+        <ul>
+          <li><a href="#">Terminos de Uso</a></li>
+          <li><a href="#">Trabaja con Nosotros</a></li>
+          <li><a href="#">Soporte</a></li>
+          <li><i class="bi bi-c-circle"></i></li>
+        </ul>
+      </nav>
+       
+    </footer>
+  </body>
+</html>

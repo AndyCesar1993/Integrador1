@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet">    <link rel="stylesheet" href="./assets/style-login.css">
+    <link rel="stylesheet" href="./assets/style-registro.css">
+    <title>Register</title>
+</head>
+<body>
+    <div class="register">
+        <h1>REGISTRARSE</h1>
+        <form>
+            <section>
+                <div class="formulario">
+                    <label>Nombre Completo</label>
+                    <div class="nombre">
+                        <input type="text" name="nombre" id="nombre" required placeholder="Ingrese Nombre">
+                        <input type="text" name="apellido" id="apellido" required placeholder="Ingrese Apellido">
+                    </div>
+                    <label>Fecha de nacimiento</label>
+                    <input type="date" name="Edad" id="Edad" required>
+                    <label>Genero</label>
+                    <select name="genero" id="genero">
+                        <option value="">Indique Genero</option>
+                        <option value="masculino">Masculino</option>
+                        <option value="Femenino">Femenino</option>
+                        <option value="Otro">Otro</option>
+                    </select>
+                </div>
+                <div class="formulario">
+                    <label>Domicilio</label>
+                    <input type="text" name="direccion" id="direccion" required placeholder="Ingrese Pais">
+                    <input type="text" name="direccion" id="direccion" required placeholder="Ingrese Provincia">
+                    <input type="text" name="direccion" id="direccion" required placeholder="Ingrese Calle y Nro">
+                    <label>Email</label>
+                    <input type="email" name="Email" id="email" required placeholder="Ingrese Email">
+                </div>
+            </section>
+            <label>Contraseña</label>
+            <div class="contraseña-input">
+                <input type="password" name="password" id="contraseña" required placeholder="Ingrese Contraseña">
+                <input type="password" name="password" id="contraseña" required placeholder="Reingrese Contraseña">
+            </div>
+            <button type="submit" value="registro"><a href="./index.html">Registrarse</a></button>
+        </form>
+    </div>
+</body>
+</html>

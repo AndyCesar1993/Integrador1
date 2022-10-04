@@ -1,0 +1,97 @@
+:root{
+    --background:#a4dbee;
+    --border:#4e8f96;
+    --blue: #0d7485;
+    --letter-white: #ffffff;
+    --letter-black:#000000;
+    
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Sans Pro', sans-serif;    list-style: none;
+    text-decoration: none;
+
+}
+
+body{
+    background-image: url(./login/background.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.login h1{
+    letter-spacing: 2px;
+    font-weight: 700;
+    text-shadow:3px 2px rgb(81, 73, 73);
+}
+.login img{
+    width: 250px;
+}
+.login form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.login form label{
+    font-size: 25px;
+    font-weight: 400;
+}
+.login form input{
+    border-radius: 2rem;
+    background: transparent;
+    backdrop-filter: blur(2px);
+    padding: 0 5px;
+    font-size: 20px;
+    
+}
+.login form button{
+    background: var(--blue);
+    border: none;
+    padding: 2px 5px;
+    border-radius: 2rem;
+    box-shadow: 1px 5px 5px var(--border);
+}
+.login form button a{
+    color: var(--letter-white);
+    font-size: 20px;
+}
+
+
+/*Mediaquires*/
+
+@media (max-width:950px){
+    body{
+        background: url(./login/background-media.jpg);
+    }
+}
+
+/*Animaciones*/
+
+.login form button:hover{
+    transform: scale(0.9);
+    transition: all 0.3s linear;
+}
+
+.login h1{
+    animation: fade 0.5s ease-in;
+}
+
+@keyframes fade{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
