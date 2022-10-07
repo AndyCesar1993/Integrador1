@@ -12,6 +12,7 @@
     padding: 0;
     font-family: 'Source Sans Pro', sans-serif;    list-style: none;
     text-decoration: none;
+    color: var(--letter-black);
 
 }
 
@@ -46,6 +47,11 @@ body{
 .login form label{
     font-size: 25px;
     font-weight: 400;
+}
+.login form :nth-child(6){
+    font-size: 15px;
+    color: var(--letter-black);
+    text-decoration: underline;
 }
 .login form input{
     border-radius: 2rem;
@@ -84,14 +90,18 @@ body{
 }
 
 .login h1{
-    animation: fade 0.5s ease-in;
+    animation: fade 3s ease-in;
 }
 
 @keyframes fade{
-    from{
+    0%{
         opacity: 0;
     }
-    to{
-        opacity: 1;
+    50%{
+        opacity: 0.5;
     }
+    100%{
+        opacity: 1;
+}
+
 }
